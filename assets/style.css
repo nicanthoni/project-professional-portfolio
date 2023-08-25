@@ -104,14 +104,35 @@ label #cancel {
       top: 20px;
       width: 130px;
     } nav ul li a {
-        font-size: 15px;
+        font-size: 16px;
     }
   }
   @media (max-width: 860px) {
     label #btn{
         display: block;
+    } 
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--banner-background);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    } 
+    nav ul li {
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
     }
     nav ul li a {
-        font-size: 15px;
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    #check:checked ~ label #cancel {
+        display: block;
     }
   }
