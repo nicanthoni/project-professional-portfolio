@@ -9,28 +9,109 @@
 * {
     padding: 0px;
     margin: 0px;
-}
-
-a {
+    list-style: none;
     text-decoration: none;
 }
 
-.header-background {
-    background-color: var(--banner-background);
-    padding: 20px;
+body {
+    background-color: var(--background-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.header-background a {
-    color: var(--banner-text);
+.header {
+    background-color: var(--banner-background);
+    padding: 35px 20px;
+    display: flex;
 }
 
 /* Name / Logo to sit as square on top left. Idea is to have the text color match the header background color,
  and the block around it be the color of the header text */
-#header-name {
-    color: var(--banner-background);
-}
-
 #name-container {
     color: var(--banner-text);
+    font-size: 24px;
+    font-weight: bolder;
+    position:absolute;
+}
+
+#top-nav {
+    margin-left: auto;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
     display: inline-block;
 }
+
+nav ul li a {
+    position: relative;
+    color: var(--banner-text);
+    padding: 12px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 3px;
+    background: var(--banner-text);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+    color: var(--banner-text);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 1118px) {
+  h1 {
+    left: 8%;
+  }
+}
+@media (max-width: 944px) {
+    h1 {
+      left: 6%;
+      top: 20px;
+      width: 130px;
+    } nav ul li a {
+        font-size: 15px;
+    }
+  }
+  @media (max-width: 860px) {
+    label #btn{
+        display: block;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+  }

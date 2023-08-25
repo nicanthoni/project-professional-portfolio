@@ -8,31 +8,38 @@
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Nic Diaz's Portfolio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Header / top nav bar -->
-
-    <section class="header-background">
-        <header>
-            <div id="name-container">
-                <h1 id="header-name">Nic Diaz</h1>
+    <section>
+        <header class="header">
+            <!-- ^^^^ Trying to place a 'box' with --banner-text color as the border color around my name -->
+            <h1 id="name-container">Nic Diaz</h1>
+            <div id="top-nav">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fa-solid fa-bars" id="btn"></i>
+                        <i class="fas fa-times" id="cancel"></i>
+                    </label>
+                    <ul>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="header-ul">
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
-            </nav>
+        </header>
         </header>
     </section>
 
 
     <!-- Within the main, I'll have a short intro/about me, with clickable images under it to bring to respective work -->
     <main></main>
-    
+
 
     <!-- Footer / bottom bar -->
     <footer></footer>
