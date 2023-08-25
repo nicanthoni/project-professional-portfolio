@@ -1,0 +1,36 @@
+/* Color Pallete: https://color.adobe.com/mythemes */
+
+:root {
+    --background-color: #E4EBF2;
+    --banner-background: #242526;
+    --banner-text: #EBEFF2;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-background {
+    background-color: var(--banner-background);
+    padding: 20px;
+}
+
+.header-background a {
+    color: var(--banner-text);
+}
+
+/* Name / Logo to sit as square on top left. Idea is to have the text color match the header background color,
+ and the block around it be the color of the header text */
+#header-name {
+    color: var(--banner-background);
+}
+
+#name-container {
+    color: var(--banner-text);
+    display: inline-block;
+}
