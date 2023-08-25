@@ -59,10 +59,10 @@ nav ul li a {
 nav ul li a:before {
     position: absolute;
     content: '';
-    left: 0;
+    left: 1;
     bottom: 0;
     width: 80%;
-    height: 3px;
+    height: 2px;
     background: var(--banner-text);
     transform: scaleX(0);
     transform-origin: right;
