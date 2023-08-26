@@ -3,7 +3,7 @@
 :root {
     --background-color: #E4EBF2;
     --banner-background: #242526;
-    --banner-text: hsl(206, 21%, 94%);
+    --banner-text: rgb(236, 240, 243);
 }
 
 * {
@@ -11,6 +11,11 @@
     margin: 0px;
     list-style: none;
     text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--banner-text);
 }
 
 body {
@@ -22,6 +27,7 @@ body {
     background-color: var(--banner-background);
     padding: 35px 20px;
     display: flex;
+    width: 
 }
 
 /* Name / Logo to sit as square on top left. Idea is to have the text color match the header background color,
@@ -118,6 +124,30 @@ label #cancel {
 
 
 
+
+/* FOOTER Styling below */
+
+
+.footer {
+    position: fixed;
+    background-color: var(--banner-background);
+    color: var(--banner-text);
+    padding: 35px 20px;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-me {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.contact-info {
+    display: inline-block;
+    float: right;
+}
 
 /* Media Queries */
 
