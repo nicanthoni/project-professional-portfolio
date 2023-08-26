@@ -37,38 +37,42 @@
         </header>
         </header>
     </section>
-    <!-- Within the main, I'll have a short intro/about me, with clickable images under it to bring to respective work -->
+
+    <!--Left side of main content: Image that holds a title at the base of it, about me written to the right side -->
     <main>
-        <!-- About me: Left-center, "about me" layered on base of photo, about me paragraph to the right -->
-        <section class="container">
-            <div class="avatar">
-                <img src="./assets/images/DiazStreamLogoColor-01.png" alt="Avatar version of Nic">
-            </div>
-            <div class="about-me">
-                <h2>About Me</h2>
-            </div>
-            <div class="paragraph">
-                <p>Paragraph sharing a little bit about myself</p>
-            </div>
-        </section>
+        <div class="main-content">
+            <section class="about-me">
+                <div class="left-column">
+                    <div class="avatar"></div>
+                    <h2 class="title">About Me</h2>
+                </div>
+                <div class="right-column">
+                    <p class="description">Paragraph sharing a little about myself</p>
+                </div>
+            </section>
 
-        <!-- Projects: To the right of the about me section, using the remaining horizontal space. vertical scroll on right -->
-        <section class="content" id="projects">
-            <h2>Projects</h2>
-        </section>
-
-
-        <!-- Resume: Evenly spaced to the right of the About Me, in remaining space under Projects section -->
-        <section class="content" id="resume">
-            <h2>Resume</h2>
-        </section>
+            <!-- Right side of main content: Projects -->
+            <section class="projects-and-resume">
+                <div class="projects">
+                    <ul>
+                        <li>Project 1</li>
+                        <li>Project 2</li>
+                        <li>Project 3</li>
+                        <li>Project 4</li>
+                    </ul>
+                </div>
+                <div class="resume">
+                    <a href="#">Resume</a>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer / bottom bar -->
     <footer>
         <h2>Contact Me</h2>
-        <li><a href="#">Email:</a></li>
-        <li><a href="#">Phone:</a></li>
+        <a href="#">Email:</a>
+        <a href="#">Phone:</a>
     </footer>
 
 </body>

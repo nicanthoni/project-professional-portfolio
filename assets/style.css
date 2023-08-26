@@ -30,7 +30,7 @@ body {
     color: var(--banner-text);
     font-size: 24px;
     font-weight: bolder;
-    position:absolute;
+    position: absolute;
 }
 
 #top-nav {
@@ -91,29 +91,30 @@ label #cancel {
 
 /* HEADER styling ENDS here */
 
-.container {
- display: flex;
- flex-direction: column;
- align-items: center;
- width: 60%;
-}
-
-.container img {
-   width:70%;
-}
-
-.avatar {
-
+.main-content {
+    display: flex;
 }
 
 .about-me {
-
+    display: flex;
+    width: 60%
 }
 
-.paragraph {
-
+.avatar {
+    width: 500px;
+    height: 500px;
+    background: grey;
 }
 
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    margin: 0 0 0 40px;
+}
 
 
 
@@ -121,23 +122,28 @@ label #cancel {
 /* Media Queries */
 
 @media (max-width: 1118px) {
-  h1 {
-    left: 8%;
-  }
+    h1 {
+        left: 8%;
+    }
 }
+
 @media (max-width: 944px) {
     h1 {
-      left: 6%;
-      top: 20px;
-      width: 130px;
-    } nav ul li a {
+        left: 6%;
+        top: 20px;
+        width: 130px;
+    }
+
+    nav ul li a {
         font-size: 16px;
     }
-  }
-  @media (max-width: 860px) {
-    label #btn{
+}
+
+@media (max-width: 860px) {
+    label #btn {
         display: block;
-    } 
+    }
+
     ul {
         position: fixed;
         width: 100%;
@@ -147,24 +153,29 @@ label #cancel {
         left: -100%;
         text-align: center;
         transition: all .5s;
-    } 
+    }
+
     nav ul li {
-        display:block;
+        display: block;
         margin: 50px 0;
         line-height: 30px;
     }
+
     nav ul li a {
         font-size: 20px;
     }
-    #check:checked ~ ul {
+
+    #check:checked~ul {
         left: 0;
     }
-    #check:checked ~ label #btn {
-        display: none;
-    } 
-    #check:checked ~ label #cancel {
-        display: block;
-  } 
-  }
 
-  /* Media query for top nav ends here */
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+    }
+}
+
+/* Media query for top nav ends here */
