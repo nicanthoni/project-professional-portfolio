@@ -3,7 +3,7 @@
 :root {
     --background-color: #E4EBF2;
     --banner-background: #242526;
-    --banner-text: #EBEFF2;
+    --banner-text: hsl(206, 21%, 94%);
 }
 
 * {
@@ -88,6 +88,25 @@ label #cancel {
 #check {
     display: none;
 }
+
+#about-me img {
+    width: 45%;
+    object-position: ;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
