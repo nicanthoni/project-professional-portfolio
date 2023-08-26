@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- Header / top nav bar -->
+    <!-- Header / nav bar -->
     <section>
         <header class="header">
             <!-- ^^^^ Trying to place a 'box' with --banner-text color as the border color around name / logo -->
@@ -28,7 +28,7 @@
                     </label>
                     <ul>
                         <li><a href="#">About Me</a></li>
-                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Projects</a></li>
                         <li><a href="#">Contact Me</a></li>
                         <li><a href="#">Resume</a></li>
                     </ul>
@@ -38,19 +38,41 @@
         </header>
     </section>
     <!-- Within the main, I'll have a short intro/about me, with clickable images under it to bring to respective work -->
-    <main>
+    <main id="content-section">
 
-        <section id="about-me">
-            <img src="./assets/images/DiazStreamLogoColor-01.png">
-            <h2>About Me</h2>
+        <!-- About me: Left-center, "about me" layered on base of photo, about me paragraph to the right -->
+        <section class="content" id="about-me">
+            <div>
+                <img src="./assets/images/DiazStreamLogoColor-01.png" alt="Avatar version of Nic" class="avatar">
+                <h2>About Me</h2>
+            </div>
+            <div>
+                <p>Paragraph sharing a little bit about myself</p>
+            </div>
         </section>
+
+        <!-- Projects: To the right of the about me section, using the remaining horizontal space. vertical scroll on right -->
+        <section class="content" id="projects">
+            <h2>Projects</h2>
+        </section>
+
+
+        <!-- Resume: Evenly spaced to the right of the About Me, in remaining space under Projects section -->
+        <section class="content" id="resume">
+            <h2>Resume</h2>
+        </section>
+
 
 
     </main>
 
-
     <!-- Footer / bottom bar -->
-    <footer></footer>
+    <footer>
+        <h2>Contact Me</h2>
+        <li><a href="#">Email:</a></li>
+        <li><a href="#">Phone:</a></li>
+    </footer>
+
 </body>
 
 </html>

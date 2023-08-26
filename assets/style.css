@@ -89,15 +89,34 @@ label #cancel {
     display: none;
 }
 
-#about-me img {
-    width: 45%;
-    object-position: ;
-    
-    
+/* Nav bar styling ends here */
+
+#about-me {
+ display: flex;
+ align-items: center;
+ width: 60%;
+ justify-content: center;
+ 
 }
 
+#about-me img {
+   width:60%;
+   display: flex;
+}
 
+#about-me h2 {
+    display: flex;
+    position: 
+}
 
+#about-me p {
+    display: flex;
+    position:fixed;
+}
+
+#projects {
+
+}
 
 
 
