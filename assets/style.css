@@ -89,41 +89,30 @@ label #cancel {
     display: none;
 }
 
-/* Nav bar styling ends here */
+/* HEADER styling ENDS here */
 
-#about-me {
+.container {
  display: flex;
+ flex-direction: column;
  align-items: center;
  width: 60%;
- justify-content: center;
- 
 }
 
-#about-me img {
-   width:60%;
-   display: flex;
+.container img {
+   width:70%;
 }
 
-#about-me h2 {
-    display: flex;
-    position: 
-}
-
-#about-me p {
-    display: flex;
-    position:fixed;
-}
-
-#projects {
+.avatar {
 
 }
 
+.about-me {
 
+}
 
+.paragraph {
 
-
-
-
+}
 
 
 
@@ -176,5 +165,6 @@ label #cancel {
     #check:checked ~ label #cancel {
         display: block;
   } 
+  }
 
   /* Media query for top nav ends here */
