@@ -145,8 +145,9 @@ label #cancel {
 }
 
 .contact-info {
-    display: inline-block;
-    float: right;
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 /* Media Queries */
