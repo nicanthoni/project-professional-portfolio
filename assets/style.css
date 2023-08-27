@@ -238,9 +238,41 @@ label #cancel {
 
 /* For main-content START */
 
-@media ()
+@media (max-width: 1530px) {
+    .left-column {
+        width: 30%;
+    }
+    .center-column {
+        width: 30%;
+    }
+   .right-column {
+    width: 70%;
+    margin-top: 14px;
+
+   } .main-content {
+    justify-content: center;
+    margin-top: 0px;
+   }
+}
 
 
+
+@media (max-width: 861px) {
+    .left-column {
+        width: 80%;
+    }
+    .center-column {
+        width: 80%;
+    }
+   .right-column {
+    width: 80%;
+    margin-top: 14px;
+
+   } .main-content {
+    justify-content: center;
+    margin-top: 0px;
+   }
+}
 
 /* For main-content END */
 
