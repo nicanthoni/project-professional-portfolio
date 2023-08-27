@@ -18,7 +18,7 @@
     <section>
         <header class="header">
             <!-- ^^^^ Trying to place a 'box' with --banner-text color as the border color around name / logo -->
-            <h1 id="name-container">Nicolas Diaz</h1>
+            <h1 class="logo-container">LOGO</h1>
             <div id="top-nav">
                 <nav>
                     <input type="checkbox" id="check">
@@ -29,8 +29,8 @@
                     <ul>
                         <li><a href="#">About Me</a></li>
                         <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact Me</a></li>
-                        <li><a href="#">Resume</a></li>
+                        <li><a href="#contact-me">Contact Me</a></li>
+                        <li><a href="https://www.linkedin.com/in/nicolasd13/" target="_blank">Resume</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,7 +44,7 @@
             <section class="about-me">
                 <div class="left-column">
                     <div class="avatar"></div>
-                    <h2 class="title">About Me</h2>
+                    <h2 class="name">Nicolas Diaz</h2>
                 </div>
                 <div class="right-column">
                     <p class="description">
@@ -62,15 +62,16 @@
                 <div class="projects">
                     <ul>
                         <div class="project-1">
-                            <li>Project 1</li>
+                            <li><a href="https://github.com/nicanthoni/project-code-refactor" target="_blank">Code Refactor</a></li>
                         </div>
-                        <li>Project 2</li>
-                        <li>Project 3</li>
-                        <li>Project 4</li>
+                        <li><a href="#">Project 2</a></li>
+                        <li><a href="#">Project 3</a></li>
+                        <li><a href="#">Project 3</a></li>
+                        <li><a href="#">Project 4</a></li>
                     </ul>
                 </div>
                 <div class="resume">
-                    <a href="https://www.linkedin.com/in/nicolasd13/" target="_blank">Resume</a>
+                    <li><a href="https://www.linkedin.com/in/nicolasd13/" target="_blank">Resume</a></li>
                 </div>
             </section>
         </div>
@@ -78,9 +79,9 @@
 
     <!-- Footer / bottom bar -->
     <section>
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <div class="contact-me">
-                <h2>Contact Me:</h2>
+                <h2 id="contact-me">Contact Me:</h2>
             </div>
             <div class="contact-info">
                 <a href="tel:850-382-2941"><i class="fa-solid fa-phone-volume" style="color: #ecf0f3;"></i></a>
