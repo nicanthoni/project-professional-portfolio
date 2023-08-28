@@ -232,7 +232,8 @@ label #cancel {
 
 /* For main-content START */
 
-@media (min-width: 320px) {
+
+/* @media (min-width: 320px) {
     .main-content {
         flex-direction: column;
         flex-basis: 100%;
@@ -249,11 +250,39 @@ label #cancel {
     } .resume {
         margin-top: 20px;
         margin-bottom: 80px;
+    } .footer h2 {
+        display: none;
+        /* Did this cause contact me looks clunky 
+    } } 
+*/
+
+
+
+
+/* Diff approach here */
+
+@media (max-width:768px) {
+    .main-content {
+        flex-direction: column;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    } .left-column {
+        margin-top: 160px;
+    } .center-column {
+        margin-top: 10px;
+
+    } .right-column {
+        margin-top: 30px;
+    } .resume {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    } .footer h2 {
+        display: none;
+        /* Did this cause contact me looks clunky */
     }
-
 }
-
-
 
 
 
@@ -263,16 +292,23 @@ label #cancel {
 
 /* @media (min-width:600px) {}
 
-        @media (min-width:1025px) {}
+@media (min-width:1025px) {}
 
-        @media (min-width:1281px) {} */
-
-
+@media (min-width:1281px) {} */
 
 
 
 
-*/ */
+
+
+
+
+
+
+
+
+
+
 /* For main-content END */
 
 
