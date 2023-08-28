@@ -232,14 +232,14 @@ label #cancel {
 
 /* For main-content START */
 
-/* @media (min-width: 320px) {
+@media (min-width: 320px) {
 .main-content {
     flex-direction: column;
     flex-basis: 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
-} */
+}
 
 
 
@@ -311,7 +311,7 @@ label #cancel {
         display: block;
     }
 
-    ul {
+  .header ul {
         position: fixed;
         width: 100%;
         height: 100vh;
