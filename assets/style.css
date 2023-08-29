@@ -11,6 +11,7 @@
     margin: 0px;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 a {
@@ -118,7 +119,6 @@ label #cancel {
     display: flex;
     flex-direction: column;
     flex-basis: 20%;
-    border: 5px solid red;
     margin-top: 300px;
 
 }
@@ -148,7 +148,6 @@ label #cancel {
     flex-basis: 30%;
     margin-top: 300px;
     justify-content: flex-end;
-    border: 5px solid red;
 }
 
 .description {
@@ -159,14 +158,12 @@ label #cancel {
 }
 
 .right-column {
-    display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-basis: 30%;
     margin-top: 300px;
-    border: 5px solid red;
 }
 
 
@@ -180,7 +177,7 @@ label #cancel {
     justify-content: center;
 }
 
-.right-column li a {
+.right-column a {
     color: var(--banner-background);
 }
 
@@ -194,12 +191,9 @@ label #cancel {
 
 
 .resume {
-    height: 14px;
-    font-size: 24px;
-    width: 80%;
-    /* justify-content: center;
-    align-items: center; */
+    font-size: 16px;
     margin-top: 60px;
+    border: var(--banner-background) solid 4px;
     background-color: var(--banner-text);
 }
 
@@ -240,21 +234,33 @@ label #cancel {
         flex-wrap: wrap;
         justify-content: center;
         
-    } .left-column {
+    }
+    
+    .left-column {
         margin-top: 160px;
-    } .center-column {
+    }
+    
+    .center-column {
         margin-top: 10px;
         text-align: center;
 
-    } .right-column {
+    }
+    
+    .right-column {
         margin-top: 30px;
-    } .resume {
+    }
+    
+    .resume {
         margin-top: 20px;
         margin-bottom: 80px;
-    } .footer h2 {
+    }
+    
+    .footer h2 {
         display: none;
         /* Did this cause contact me looks clunky */
-    } .logo-container {
+    }
+    
+    .logo-container {
         display: none;
         /* Did this cause contact me looks clunky */
 }
@@ -267,74 +273,63 @@ label #cancel {
         flex-wrap: wrap;
         justify-content: center;
         
-    } .left-column {
-        flex-basis: 30%;
-        width: 40%;
-        
-    } .center-column {
+    }
+
+    .left-column {
+        flex-basis: 40%;
+    }
+
+    .center-column {
+        flex-basis: 60%;
         align-items: center;
-        margin-left: 410px;
         justify-items: flex-start;
 
-    } .right-column {
+    }
+
+    .right-column {
         margin-top: 30px;
-    } .resume {
+        flex-basis: 80%;
+    }
+
+    .resume {
         margin-top: 20px;
         margin-bottom: 80px;
-    } .footer h2 {
+    }
+
+    .footer h2 {
         display: none;
         /* Did this cause contact me looks clunky */
     } 
  }
 
 
-
- /* .center-column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 30%;
-    margin-top: 300px;
-    justify-content: flex-end;
-    border: 5px solid red;
-}
-
-.description {
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: flex-end; */
-
-
-    /* .main-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-basis: 100%;
-    } */
-    
-
-
-
-
 @media (max-width:1281px) {
     .main-content {
-        flex-direction: column;
-        flex-basis: 80%;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         
-    } .left-column {
+    }
+
+    .left-column {
         margin-top: 160px;
-    } .center-column {
+    }
+
+    .center-column {
         margin-top: 10px;
 
-    } .right-column {
+    }
+
+    .right-column {
         margin-top: 30px;
-    } .resume {
+    }
+
+    .resume {
         margin-top: 20px;
         margin-bottom: 80px;
-    } .footer h2 {
+    }
+
+    .footer h2 {
         display: none;
         /* Did this cause contact me looks clunky */
     }
@@ -375,7 +370,7 @@ label #cancel {
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 469px) {
     label #btn {
         display: block;
     }
