@@ -233,35 +233,6 @@ label #cancel {
 
 /* For main-content START */
 
-
-/* @media (min-width: 320px) {
-    .main-content {
-        flex-direction: column;
-        flex-basis: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-    } .left-column {
-        margin-top: 160px;
-    } .center-column {
-        margin-top: 10px;
-
-    } .right-column {
-        margin-top: 30px;
-    } .resume {
-        margin-top: 20px;
-        margin-bottom: 80px;
-    } .footer h2 {
-        display: none;
-        /* Did this cause contact me looks clunky 
-    } } 
-*/
-
-
-
-
-/* Diff approach here */
-
 @media (max-width:768px) {
     .main-content {
         flex-direction: column;
@@ -273,6 +244,7 @@ label #cancel {
         margin-top: 160px;
     } .center-column {
         margin-top: 10px;
+        text-align: center;
 
     } .right-column {
         margin-top: 30px;
@@ -282,19 +254,73 @@ label #cancel {
     } .footer h2 {
         display: none;
         /* Did this cause contact me looks clunky */
-    }
+    } .logo-container {
+        display: none;
+        /* Did this cause contact me looks clunky */
+}
 }
 
-
-
-
-
-
-
- /* @media (min-width:1025px) {
+ @media (max-width:1025px) {
     .main-content {
         flex-direction: column;
         flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    } .left-column {
+        flex-basis: 30%;
+        width: 40%;
+        
+    } .center-column {
+        align-items: center;
+        margin-left: 410px;
+        justify-items: flex-start;
+
+    } .right-column {
+        margin-top: 30px;
+    } .resume {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    } .footer h2 {
+        display: none;
+        /* Did this cause contact me looks clunky */
+    } 
+ }
+
+
+
+ /* .center-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    margin-top: 300px;
+    justify-content: flex-end;
+    border: 5px solid red;
+}
+
+.description {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end; */
+
+
+    /* .main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    } */
+    
+
+
+
+
+@media (max-width:1281px) {
+    .main-content {
+        flex-direction: column;
+        flex-basis: 80%;
         flex-wrap: wrap;
         justify-content: center;
         
@@ -312,14 +338,7 @@ label #cancel {
         display: none;
         /* Did this cause contact me looks clunky */
     }
- } */
-
-
-
-
-
-/* @media (min-width:1281px) {} */ 
-
+ }
 
 
 
