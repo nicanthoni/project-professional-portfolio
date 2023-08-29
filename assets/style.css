@@ -187,6 +187,10 @@ label #cancel {
      height: 60px;
      width: 100%;
      justify-content: center;
+     background-image: url(./images/600x600\ logo.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     justify-content: center;
 }
 
 .project-1 li {
@@ -205,6 +209,7 @@ label #cancel {
      height: 100px;
      width: 100%;
      justify-content: center;
+     background-image: url(./images/button-1-image.png);
 }
 
 
