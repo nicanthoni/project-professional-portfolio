@@ -20,7 +20,7 @@ a {
 }
 
 main {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 body {
@@ -38,6 +38,7 @@ body {
     background-color: var(--banner-background);
     padding: 35px 10px;
     width: 100%;
+    top: 0;
 }
 
 /* Name / Logo to sit as square on top left. Idea is to have the text color match the header background color,
@@ -113,13 +114,16 @@ label #cancel {
     justify-content: center;
     flex-wrap: wrap;
     flex-basis: 100%;
+    margin-top: 300px;
+    align-items: flex-end;
 }
 
 .left-column {
     display: flex;
     flex-direction: column;
     flex-basis: 20%;
-    margin-top: 310px;
+    align-items: flex-end;
+    
 
 }
 
@@ -139,16 +143,17 @@ label #cancel {
     font-size: 38px;
     font-weight: bold;
     margin-bottom: 16px;
-
+    justify-items: center;
 }
 
 .center-column {
     display: flex;
     flex-direction: column;
     flex-basis: 25%;
-    margin-top: 300px;
     margin-left: 20px;
+    margin-right: 20px;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .description {
@@ -162,25 +167,26 @@ label #cancel {
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-basis: 30%;
-    margin-top: 450px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
-
-.right-column li {
-    /* padding: 12px; */
-    margin-bottom: 3px;
-    border: var(--banner-background) solid 4px;
-    background-color: var(--banner-text);
-    height: 30px;
-    width: 100%;
-    justify-content: center;
-}
 
 .right-column a {
     color: var(--banner-background);
+}
+
+
+.projects-2-3-4-5 {
+     /* padding: 12px; */
+     margin-bottom: 5px;
+     border: var(--banner-background) solid 4px;
+     background-color: var(--banner-text);
+     height: 60px;
+     width: 100%;
+     justify-content: center;
 }
 
 .project-1 li {
@@ -191,13 +197,20 @@ label #cancel {
     font-size: 50px;
 }
 
-.projects-2-3-4-5 {
-    
+.project-1 {
+     /* padding: 12px; */
+     margin-bottom: 5px;
+     border: var(--banner-background) solid 4px;
+     background-color: var(--banner-text);
+     height: 100px;
+     width: 100%;
+     justify-content: center;
 }
+
 
 .resume {
     font-size: 16px;
-    margin-top: 265px;
+    margin-top: 100px;
     border: var(--banner-background) solid 4px;
     background-color: var(--banner-text);
 }
@@ -232,44 +245,45 @@ label #cancel {
 
 /* For main-content START */
 
-@media (max-width:768px) {
+
+
+@media (max-width:1281px) {
     .main-content {
-        flex-direction: column;
-        flex-basis: 100%;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        
+        margin-top: 0px;
     }
-    
+
     .left-column {
         margin-top: 160px;
+        flex-basis: 40%;
     }
-    
+
     .center-column {
         margin-top: 10px;
-        text-align: center;
+        flex-basis: 40%;
 
     }
-    
+
     .right-column {
+        flex-direction: column;
         margin-top: 30px;
+        flex-basis: 80%;
+        
     }
-    
+
     .resume {
         margin-top: 20px;
         margin-bottom: 80px;
     }
-    
+
     .footer h2 {
         display: none;
-        /* Did this cause contact me looks clunky */
     }
-    
-    .logo-container {
-        display: none;
-        /* Did this cause contact me looks clunky */
-}
-}
+ }
+
+
 
 
  @media (max-width:1025px) {
@@ -278,6 +292,8 @@ label #cancel {
         flex-basis: 100%;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: stretch;
+        margin-top: 0px;
         
     }
 
@@ -307,47 +323,46 @@ label #cancel {
 
     .footer h2 {
         display: none;
-        /* Did this cause contact me looks clunky */
     } 
  }
 
-
-@media (max-width:1281px) {
+ @media (max-width:768px) {
     .main-content {
-        flex-direction: row;
+        flex-direction: column;
+        flex-basis: 100%;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 60px;
         
     }
-
+    
     .left-column {
-        margin-top: 160px;
-        flex-basis: 40%;
+        margin-top: 40px;
     }
-
+    
     .center-column {
         margin-top: 10px;
-        flex-basis: 40%;
+        text-align: center;
 
     }
-
+    
     .right-column {
-        flex-direction: column;
         margin-top: 30px;
-        flex-basis: 80%;
-        
     }
-
+    
     .resume {
         margin-top: 20px;
         margin-bottom: 80px;
     }
-
+    
     .footer h2 {
         display: none;
-        /* Did this cause contact me looks clunky */
     }
- }
+    
+    .logo-container {
+        display: none;
+}
+}
 
 
 
@@ -387,9 +402,7 @@ label #cancel {
 @media (max-width: 469px) {
     label #btn {
         display: block;
-    }
-
-    .header ul {
+    } .header ul {
         position: fixed;
         width: 100%;
         height: 100vh;
