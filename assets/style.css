@@ -122,7 +122,7 @@ label #cancel {
     display: flex;
     flex-direction: column;
     flex-basis: 20%;
-    align-items: flex-end;
+    align-items: 
     
 
 }
@@ -143,7 +143,6 @@ label #cancel {
     font-size: 38px;
     font-weight: bold;
     margin-bottom: 16px;
-    justify-items: center;
 }
 
 .center-column {
@@ -153,7 +152,7 @@ label #cancel {
     margin-left: 20px;
     margin-right: 20px;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .description {
@@ -173,17 +172,14 @@ label #cancel {
     margin-right: 20px;
 }
 
-
-.right-column a {
-    color: var(--banner-background);
+.right-column ul {
+    text-align: center;
 }
 
-
 .projects-2-3-4-5 {
-     /* padding: 12px; */
+     padding: 14px;
      margin-bottom: 5px;
      border: var(--banner-background) solid 4px;
-     background-color: var(--banner-text);
      height: 60px;
      width: 100%;
      justify-content: center;
@@ -191,18 +187,12 @@ label #cancel {
      background-repeat: no-repeat;
      background-size: cover;
      justify-content: center;
-}
-
-.project-1 li {
-    width: 100%;
-    height: 140px;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
+     font-weight: bolder;
+     font-size: 20px;
 }
 
 .project-1 {
-     /* padding: 12px; */
+     padding: 30px;
      margin-bottom: 5px;
      border: var(--banner-background) solid 4px;
      background-color: var(--banner-text);
@@ -210,16 +200,28 @@ label #cancel {
      width: 100%;
      justify-content: center;
      background-image: url(./images/button-1-image.png);
+     width: 100%;
+     height: 140px;
+     justify-content: center;
+     align-items: center;
+     justify-items:center;
+     font-size: 40px;
+     font-weight: bolder;
 }
 
-
 .resume {
-    font-size: 16px;
+    font-size: 22px;
+    padding: 13px;
+    height: 70px;
     margin-top: 100px;
     border: var(--banner-background) solid 4px;
     background-color: var(--banner-text);
+    font-weight: bold;
 }
-
+ 
+.resume a {
+    color: var(--banner-background);
+}
 
 /* FOOTER Styling below */
 
