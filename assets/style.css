@@ -11,6 +11,7 @@
     margin: 0px;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 a {
@@ -18,10 +19,18 @@ a {
     color: var(--banner-text);
 }
 
+main {
+    min-height: 80vh;
+}
+
 body {
+    line-height: 1.6;
     background-color: var(--background-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* ALlows main element to cover all the space of the screen looking at it */
+
 
 .header {
     display: flex;
@@ -29,6 +38,7 @@ body {
     background-color: var(--banner-background);
     padding: 35px 10px;
     width: 100%;
+    top: 0;
 }
 
 /* Name / Logo to sit as square on top left. Idea is to have the text color match the header background color,
@@ -95,111 +105,130 @@ label #cancel {
 
 /* HEADER styling ENDS here */
 
-/* ABOUT ME container STARTS here */
+/* Main container STARTS here */
+
 
 .main-content {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin-top: 300px;
+    align-items: flex-end;
 }
 
-.about-me {
+.left-column {
     display: flex;
-    width: 60%;
-    margin-top: 320px;
-    margin-left: 120px;
+    flex-direction: column;
+    flex-basis: 20%;
+    align-items: 
+    
+
 }
 
 .avatar {
-    width: 600px;
+    width: 100%;
     height: 600px;
     /* background: var(--banner-background); */
     max-width: 100%;
     max-height: 100%;
     background-image: url(./images/600x600\ logo.png);
-    background-repeat: no-repeat; 
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
 }
 
 .name {
-    text-align: center;
-    font-size: 24px;
+    font-size: 38px;
     font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .description {
-    margin: 500px 0 0 0px;
-}
-
-
-/*ABOUT ME container ends here */
-
-/* Projects-and-resume container STARTS here  */
-
-.projects-and-resume {
-    display: flex;
     flex-direction: column;
-    width: 40%;
-    margin-top: 220px;
-    margin-right: 60px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.right-column {
+    text-align: center;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    flex-basis: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.projects {
-    font-size: 30px;
-    justify-content: center;
-    display: flex;
-    margin-top: 120px;
+.right-column ul {
+    text-align: center;
 }
 
-.projects li {
-    padding: 12px;
-    margin-bottom: 3px;
-    border: var(--banner-background) solid 4px;
-    background-color: var(--banner-text);
-    height: 30px;
-    width: 400px;
-    display: flex;
-    justify-content: center;
+.projects-2-3-4-5 {
+     padding: 14px;
+     margin-bottom: 5px;
+     border: var(--banner-background) solid 4px;
+     height: 60px;
+     width: 100%;
+     justify-content: center;
+     background-image: url(./images/600x600\ logo.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     justify-content: center;
+     font-weight: bolder;
+     font-size: 20px;
 }
 
-.project-1 li {
-    width: 400px;
-    height: 140px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    font-size: 60px;
+.project-1 {
+     padding: 30px;
+     margin-bottom: 5px;
+     border: var(--banner-background) solid 4px;
+     background-color: var(--banner-text);
+     height: 100px;
+     width: 100%;
+     justify-content: center;
+     background-image: url(./images/button-1-image.png);
+     width: 100%;
+     height: 140px;
+     justify-content: center;
+     align-items: center;
+     justify-items:center;
+     font-size: 40px;
+     font-weight: bolder;
 }
 
-.projects-and-resume a {
-    color:var(--banner-background);
-}
-
-/* Projects container ENDS here  */
-
-/* RESUME container STARTS */
 .resume {
-    padding: 12px;
-    height: 14px;
-    font-size: 24px;
-    width: 400px;
-    justify-content:center;
-    align-items: center;
-    display: flex;
-    margin-top: 60px;
+    font-size: 22px;
+    padding: 13px;
+    height: 70px;
+    margin-top: 100px;
     border: var(--banner-background) solid 4px;
     background-color: var(--banner-text);
+    font-weight: bold;
 }
-
-
-/* RESUME container ENDS here  */
+ 
+.resume a {
+    color: var(--banner-background);
+}
 
 /* FOOTER Styling below */
 
 .footer {
     background-color: var(--banner-background);
     color: var(--banner-text);
-    padding: 30px 10px;
+    padding: 50px 10px;
     display: flex;
     bottom: 0;
     width: 100%;
@@ -213,7 +242,7 @@ label #cancel {
 .contact-info {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -221,13 +250,143 @@ label #cancel {
 
 /* Media Queries */
 
+/* For main-content START */
+
+
+
+@media (max-width:1281px) {
+    .main-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .left-column {
+        margin-top: 160px;
+        flex-basis: 40%;
+    }
+
+    .center-column {
+        margin-top: 10px;
+        flex-basis: 40%;
+
+    }
+
+    .right-column {
+        flex-direction: column;
+        margin-top: 30px;
+        flex-basis: 80%;
+        
+    }
+
+    .resume {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    .footer h2 {
+        display: none;
+    }
+ }
+
+
+
+
+ @media (max-width:1025px) {
+    .main-content {
+        flex-direction: column;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        margin-top: 0px;
+        
+    }
+
+    .left-column {
+        flex-basis: 40%;
+        margin-top: 130px;
+    }
+
+    .center-column {
+        flex-basis: 60%;
+        align-items: center;
+        justify-items: flex-start;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+    .right-column {
+        margin-top: 60px;
+        flex-basis: 80%;
+    }
+
+    .resume {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .footer h2 {
+        display: none;
+    } 
+ }
+
+ @media (max-width:768px) {
+    .main-content {
+        flex-direction: column;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 60px;
+        
+    }
+    
+    .left-column {
+        margin-top: 40px;
+    }
+    
+    .center-column {
+        margin-top: 10px;
+        text-align: center;
+
+    }
+    
+    .right-column {
+        margin-top: 30px;
+    }
+    
+    .resume {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+    
+    .footer h2 {
+        display: none;
+    }
+    
+    .logo-container {
+        display: none;
+}
+}
 
 
 
 
 
 
-/* Media query for top nav START */
+
+
+
+
+
+
+
+/* For main-content END */
+
+
+/* For top nav START */
 
 @media (max-width: 1118px) {
     h1 {
@@ -247,12 +406,10 @@ label #cancel {
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 469px) {
     label #btn {
         display: block;
-    }
-
-    ul {
+    } .header ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -286,4 +443,4 @@ label #cancel {
     }
 }
 
-/* Media query for top nav END */
+/* For top nav END */
