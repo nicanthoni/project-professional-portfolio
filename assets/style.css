@@ -20,7 +20,7 @@ a {
 }
 
 main {
-    min-height: 80vh;
+    min-height: 71vh;
 }
 
 body {
@@ -339,7 +339,7 @@ label #cancel {
         flex-basis: 100%;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 110px;
+        margin-top: 115px;
 
     }
 
