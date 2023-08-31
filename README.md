@@ -28,7 +28,7 @@ Color palette from Adobe: https://color.adobe.com/mythemes
 
 ## Deployed application link
 
-Deplyed application: http://127.0.0.1:5500/index.html#description
+Deplyed application: https://nicanthoni.github.io/project-professional-portfolio/
 
 
 ## How to use?
