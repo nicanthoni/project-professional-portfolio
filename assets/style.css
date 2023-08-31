@@ -122,8 +122,8 @@ label #cancel {
     display: flex;
     flex-direction: column;
     flex-basis: 20%;
-    align-items: 
-    
+    align-items:
+
 
 }
 
@@ -177,36 +177,36 @@ label #cancel {
 }
 
 .projects-2-3-4-5 {
-     padding: 14px;
-     margin-bottom: 5px;
-     border: var(--banner-background) solid 4px;
-     height: 60px;
-     width: 100%;
-     justify-content: center;
-     background-image: url(./images/600x600\ logo.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     justify-content: center;
-     font-weight: bolder;
-     font-size: 20px;
+    padding: 14px;
+    margin-bottom: 5px;
+    border: var(--banner-background) solid 4px;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    background-image: url(./images/600x600\ logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 .project-1 {
-     padding: 30px;
-     margin-bottom: 5px;
-     border: var(--banner-background) solid 4px;
-     background-color: var(--banner-text);
-     height: 100px;
-     width: 100%;
-     justify-content: center;
-     background-image: url(./images/button-1-image.png);
-     width: 100%;
-     height: 140px;
-     justify-content: center;
-     align-items: center;
-     justify-items:center;
-     font-size: 40px;
-     font-weight: bolder;
+    padding: 30px;
+    margin-bottom: 5px;
+    border: var(--banner-background) solid 4px;
+    background-color: var(--banner-text);
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    background-image: url(./images/button-1-image.png);
+    width: 100%;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 40px;
+    font-weight: bolder;
 }
 
 .resume {
@@ -218,7 +218,7 @@ label #cancel {
     background-color: var(--banner-text);
     font-weight: bold;
 }
- 
+
 .resume a {
     color: var(--banner-background);
 }
@@ -277,7 +277,7 @@ label #cancel {
         flex-direction: column;
         margin-top: 30px;
         flex-basis: 80%;
-        
+
     }
 
     .resume {
@@ -288,12 +288,12 @@ label #cancel {
     .footer h2 {
         display: none;
     }
- }
+}
 
 
 
 
- @media (max-width:1025px) {
+@media (max-width:1025px) {
     .main-content {
         flex-direction: column;
         flex-basis: 100%;
@@ -301,7 +301,7 @@ label #cancel {
         justify-content: center;
         align-items: stretch;
         margin-top: 0px;
-        
+
     }
 
     .left-column {
@@ -330,45 +330,45 @@ label #cancel {
 
     .footer h2 {
         display: none;
-    } 
- }
+    }
+}
 
- @media (max-width:768px) {
+@media (max-width:768px) {
     .main-content {
         flex-direction: column;
         flex-basis: 100%;
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 110px;
-        
+
     }
-    
+
     .left-column {
         margin-top: 40px;
     }
-    
+
     .center-column {
         margin-top: 10px;
         text-align: center;
 
     }
-    
+
     .right-column {
         margin-top: 30px;
     }
-    
+
     .resume {
         margin-top: 20px;
         margin-bottom: 80px;
     }
-    
+
     .footer h2 {
         display: none;
     }
-    
+
     .logo-container {
         display: none;
-}
+    }
 }
 
 
@@ -409,7 +409,9 @@ label #cancel {
 @media (max-width: 469px) {
     label #btn {
         display: block;
-    } .header ul {
+    }
+
+    .header ul {
         position: fixed;
         width: 100%;
         height: 100vh;

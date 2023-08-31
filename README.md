@@ -1,25 +1,40 @@
-# bootcamp-challenge-2
-A repository to upload my challenge 2 assignment - a portfolio page.
+# professional-portfolio
+A repository to hold the source code to my professional portfolio website. My deployed application may be viewed through the section titled ## Deployed application link. 
 
 ## Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+This project exists to professionally showcase my software development projects as I continue to build them out, and to provide a means for contacting me for questions, collaboration, and employment opppurtunities.
 
 ## Screenshots
-Include logo/demo screenshot etc.
+
+Below are screenshot examples of the application, some of it's functionality, as well as it's mobile friendly mode:
+
+![ScreenShot](./assets/images/readme-screenshot.png)
+![ScreenShot](./assets/images/readme-screenshot1.png)
+![ScreenShot](./assets/images/readme-screenshot2.png)
 
 ## Tech/framework used
-Ex. -
+HTML & CSS
+
+## Credits
+
+Font Awesome & w3Schools for icons in footer (line 78-82 of index.html): 
+
+https://fontawesome.com/ 
+
+https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+
+Color palette from Adobe: https://color.adobe.com/mythemes
 
 
 ## Deployed application link
-What makes your project stand out?
+
+Deplyed application: http://127.0.0.1:5500/index.html#description
 
 
 ## How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
+If potential employers are interested in discussing any oppurtunities, they may use the contact information (click the icons in the footer) to contact me via email, phone call, test, or through my github repo. If fellow creators would like to colaborate on future projects, I may contacted in the same form.
 
 
 ## License
-A short snippet describing the license (MIT, Apache etc)
 
 MIT © [nicanthoni]()
